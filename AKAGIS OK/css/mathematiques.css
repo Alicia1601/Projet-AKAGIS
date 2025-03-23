@@ -1,0 +1,129 @@
+/* Section principale */
+.mathematiques {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+.mathematiques-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mathematiques-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.mathematiques-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Questionnaire pour le type d'intelligence */
+.intelligence-quiz {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intelligence-quiz h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.intelligence-quiz p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-question {
+    margin-bottom: 1.5rem;
+}
+
+.quiz-question p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-question label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.quiz-question input {
+    margin-right: 0.5rem;
+}
+
+.btn-submit {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Contenu principal */
+.mathematiques-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mathematiques-content h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.mathematiques-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.mathematiques-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-action {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Cacher/afficher */
+.hidden {
+    display: none;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .intelligence-quiz,
+    .mathematiques-content {
+        padding: 1.5rem;
+    }
+
+    .mathematiques-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

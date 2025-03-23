@@ -1,0 +1,138 @@
+/* Section principale */
+.culture {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+.culture-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.culture-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.culture-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Contenu */
+.culture-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Liste des fils de discussion */
+.threads {
+    margin-bottom: 3rem;
+}
+
+.thread {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.thread:hover {
+    transform: translateY(-5px);
+}
+
+.thread-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.thread-header h3 {
+    font-size: 1.2rem;
+    color: #800080;
+    margin: 0;
+}
+
+.thread-meta {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.thread p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.btn-join-thread {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Formulaire pour créer un nouveau fil */
+.new-thread-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.new-thread-form h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .thread-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .thread-meta {
+        margin-top: 0.5rem;
+    }
+}

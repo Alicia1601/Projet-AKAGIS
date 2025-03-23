@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Administration</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="#" class="btn-login" id="logout-btn">Déconnexion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale Administration -->
+    <section class="admin">
+        <div class="admin-container">
+            <!-- Barre latérale -->
+            <aside class="sidebar">
+                <h3>Administration</h3>
+                <ul>
+                    <li><a href="#dashboard" class="active" data-section="dashboard">Tableau de bord</a></li>
+                    <li><a href="#users" data-section="users">Gérer les utilisateurs</a></li>
+                    <li><a href="#oeuvres" data-section="oeuvres">Gérer les œuvres</a></li>
+                    <li><a href="#commentaires" data-section="commentaires">Gérer les commentaires</a></li>
+                    <li><a href="#cours" data-section="cours">Gérer les cours</a></li>
+                    <li><a href="#questions" data-section="questions">Gérer les questions-réponses</a></li>
+                    <li><a href="#commandes" data-section="commandes">Gérer les commandes</a></li>
+                </ul>
+            </aside>
+
+            <!-- Contenu principal -->
+            <main class="admin-content">
+                <!-- Tableau de bord -->
+                <div id="dashboard" class="admin-section">
+                    <h2>Tableau de bord</h2>
+                    <div class="stats">
+                        <div class="stat-card">
+                            <h4>Utilisateurs</h4>
+                            <p id="user-count">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Œuvres publiées</h4>
+                            <p id="oeuvre-count">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Commentaires</h4>
+                            <p id="comment-count">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Questions posées</h4>
+                            <p id="question-count">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Commandes</h4>
+                            <p id="commande-count">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestion des utilisateurs -->
+                <div id="users" class="admin-section hidden">
+                    <h2>Gérer les utilisateurs</h2>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nom d’utilisateur</th>
+                                <th>Email</th>
+                                <th>Date d’inscription</th>
+                                <th>Rôle</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-table">
+                            <!-- Les utilisateurs seront insérés dynamiquement via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Gestion des œuvres -->
+                <div id="oeuvres" class="admin-section hidden">
+                    <h2>Gérer les œuvres</h2>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Titre</th>
+                                <th>Auteur</th>
+                                <th>Date de publication</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="oeuvres-table">
+                            <!-- Les œuvres seront insérés dynamiquement via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Gestion des commentaires -->
+                <div id="commentaires" class="admin-section hidden">
+                    <h2>Gérer les commentaires</h2>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Œuvre</th>
+                                <th>Utilisateur</th>
+                                <th>Contenu</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="commentaires-table">
+                            <!-- Les commentaires seront insérés dynamiquement via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Gestion des cours -->
+                <div id="cours" class="admin-section hidden">
+                    <h2>Gérer les cours</h2>
+                    <button class="btn-add" id="add-cours-btn">Ajouter un cours</button>
+                    <form id="add-cours-form" class="hidden">
+                        <h3>Ajouter un nouveau cours</h3>
+                        <div class="form-group">
+                            <label for="cours-classe">Classe</label>
+                            <select id="cours-classe" name="classe" required>
+                                <option value="6eme">6ème</option>
+                                <option value="5eme">5ème</option>
+                                <option value="4eme">4ème</option>
+                                <option value="3eme">3ème</option>
+                                <option value="2nde">2nde</option>
+                                <option value="1ere">1ère</option>
+                                <option value="terminale">Terminale</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cours-chapitre">Chapitre</label>
+                            <input type="text" id="cours-chapitre" name="chapitre" required placeholder="Ex. Les nombres entiers">
+                        </div>
+                        <div class="form-group">
+                            <label for="cours-contenu">Contenu</label>
+                            <textarea id="cours-contenu" name="contenu" rows="5" required placeholder="Objectifs, introduction, activité, exercices..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Ajouter</button>
+                        <button type="button" class="btn-cancel" id="cancel-add-cours">Annuler</button>
+                    </form>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Classe</th>
+                                <th>Chapitre</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cours-table">
+                            <!-- Les cours seront insérés dynamiquement via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Gestion des questions-réponses -->
+                <div id="questions" class="admin-section hidden">
+                    <h2>Gérer les questions-réponses</h2>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Utilisateur</th>
+                                <th>Niveau</th>
+                                <th>Question</th>
+                                <th>Réponse</th>
+                                <th>Suggestion IA</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="questions-table">
+                            <!-- Les questions seront insérées dynamiquement via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Gestion des commandes -->
+                <div id="commandes" class="admin-section hidden">
+                    <h2>Gérer les commandes</h2>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Utilisateur</th>
+                                <th>Produit</th>
+                                <th>Quantité</th>
+                                <th>Personnalisation</th>
+                                <th>Prix total (FCFA)</th>
+                                <th>Statut</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="commandes-table">
+                            <!-- Les commandes seront insérées dynamiquement via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-nous</h3>
+                <p>Email : contact@akagis.com</p>
+                <p>Téléphone : +228 90 12 34 56</p>
+                <div class="social-links">
+                    <a href="#"><img src="../images/icons/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AKAGIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+    <script src="../js/questions-reponses.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

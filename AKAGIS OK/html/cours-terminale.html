@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Cours de Mathématiques Terminale</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/cours-classe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="profil-utilisateur.html" class="btn-login">Profil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale Cours Terminale -->
+    <section class="cours-classe">
+        <div class="cours-header">
+            <h2>Cours de Mathématiques - Terminale</h2>
+            <p>Programme togolais (APC) pour la classe de Terminale.</p>
+        </div>
+
+        <div class="cours-content">
+            <!-- Chapitre 1 : Limites et continuité -->
+            <div class="chapitre" id="chapitre1">
+                <h3>Chapitre 1 : Limites et continuité</h3>
+                <div class="objectifs">
+                    <h4>Objectifs d’apprentissage</h4>
+                    <ul>
+                        <li>Comprendre la notion de limite d’une fonction.</li>
+                        <li>Identifier si une fonction est continue en un point.</li>
+                        <li>Appliquer ces concepts pour résoudre des problèmes pratiques.</li>
+                    </ul>
+                </div>
+                <div class="introduction">
+                    <h4>Introduction</h4>
+                    <p>Les limites et la continuité sont des concepts fondamentaux en analyse mathématique. Une limite décrit le comportement d’une fonction lorsqu’une variable s’approche d’une certaine valeur, et une fonction est continue si elle ne présente pas de "saut" ou de "trou" à un point donné.</p>
+                </div>
+                <div class="activite">
+                    <h4>Activité pratique : La vitesse d’un coureur</h4>
+                    <p>Kofi participe à une course à Lomé. Sa vitesse (en m/s) est donnée par la fonction \( v(t) = \frac{10t}{t+1} \), où \( t \) est le temps en secondes. Quelle est sa vitesse lorsqu’il court depuis très longtemps (c’est-à-dire quand \( t \) tend vers l’infini) ?</p>
+                    <p><strong>Solution :</strong> Pour trouver la limite de \( v(t) \) quand \( t \to +\infty \), on observe que \( v(t) = \frac{10t}{t+1} \approx \frac{10t}{t} = 10 \). Donc, \( \lim_{t \to +\infty} v(t) = 10 \). La vitesse de Kofi tend vers 10 m/s.</p>
+                </div>
+                <div class="exercices">
+                    <h4>Exercices</h4>
+                    <p>1. Calcule \( \lim_{x \to 2} (3x + 1) \).</p>
+                    <p>2. Détermine si la fonction \( f(x) = \frac{x^2 - 4}{x - 2} \) est continue en \( x = 2 \).</p>
+                    <p>3. Une usine produit des pagnes avec un coût \( C(n) = \frac{5000n}{n+10} \) (en FCFA) pour \( n \) pagnes. Quel est le coût moyen par pagne si \( n \) devient très grand ?</p>
+                </div>
+            </div>
+
+            <!-- Chapitre 2 : Intégrales -->
+            <div class="chapitre" id="chapitre2">
+                <h3>Chapitre 2 : Intégrales</h3>
+                <div class="objectifs">
+                    <h4>Objectifs d’apprentissage</h4>
+                    <ul>
+                        <li>Comprendre la notion d’intégrale comme aire sous une courbe.</li>
+                        <li>Calculer des intégrales simples.</li>
+                        <li>Appliquer les intégrales à des problèmes réels.</li>
+                    </ul>
+                </div>
+                <div class="introduction">
+                    <h4>Introduction</h4>
+                    <p>L’intégrale est un outil puissant pour calculer des aires, des volumes, ou des quantités cumulées. Par exemple, si une fonction donne la vitesse d’un objet, son intégrale donne la distance parcourue.</p>
+                </div>
+                <div class="activite">
+                    <h4>Activité pratique : La consommation d’eau</h4>
+                    <p>Une famille à Kara consomme de l’eau à un débit donné par \( d(t) = 2t + 5 \) litres par heure, où \( t \) est le temps en heures. Quelle est la quantité d’eau consommée entre \( t = 0 \) et \( t = 3 \) heures ?</p>
+                    <p><strong>Solution :</strong> La quantité d’eau est donnée par l’intégrale \( \int_0^3 (2t + 5) \, dt \). On calcule : \( \int (2t + 5) \, dt = t^2 + 5t \). Évaluons de 0 à 3 : \( [3^2 + 5(3)] - [0^2 + 5(0)] = 9 + 15 = 24 \). La famille consomme 24 litres.</p>
+                </div>
+                <div class="exercices">
+                    <h4>Exercices</h4>
+                    <p>1. Calcule \( \int (3x^2 + 2x) \, dx \).</p>
+                    <p>2. Évalue \( \int_1^4 (x + 1) \, dx \).</p>
+                    <p>3. Un agriculteur récolte du maïs à un rythme de \( r(t) = 10t \) kg par jour. Combien récolte-t-il entre le 2ème et le 5ème jour ?</p>
+                </div>
+            </div>
+
+            <!-- Chapitre 3 : Statistiques -->
+            <div class="chapitre" id="chapitre3">
+                <h3>Chapitre 3 : Statistiques</h3>
+                <div class="objectifs">
+                    <h4>Objectifs d’apprentissage</h4>
+                    <ul>
+                        <li>Calculer la moyenne, la médiane et le mode d’un ensemble de données.</li>
+                        <li>Interpréter des données statistiques.</li>
+                        <li>Appliquer les statistiques à des situations concrètes.</li>
+                    </ul>
+                </div>
+                <div class="introduction">
+                    <h4>Introduction</h4>
+                    <p>Les statistiques permettent d’analyser des données pour prendre des décisions. Par exemple, on peut utiliser la moyenne pour évaluer la performance d’une classe ou la médiane pour comprendre la répartition des revenus.</p>
+                </div>
+                <div class="activite">
+                    <h4>Activité pratique : Les notes d’un examen</h4>
+                    <p>Voici les notes d’un examen de mathématiques dans une classe de Terminale à Sokodé : 12, 15, 8, 10, 15, 18, 9. Calcule la moyenne, la médiane et le mode.</p>
+                    <p><strong>Solution :</strong> <br>- **Moyenne** : \( (12 + 15 + 8 + 10 + 15 + 18 + 9) / 7 = 87 / 7 \approx 12,43 \). <br>- **Médiane** : Trie les notes : 8, 9, 10, 12, 15, 15, 18. La médiane est 12. <br>- **Mode** : La note qui apparaît le plus souvent est 15.</p>
+                </div>
+                <div class="exercices">
+                    <h4>Exercices</h4>
+                    <p>1. Calcule la moyenne des données suivantes : 5, 7, 7, 10, 12.</p>
+                    <p>2. Trouve la médiane des notes : 14, 16, 11, 9, 13.</p>
+                    <p>3. Un vendeur à Atakpamé note ses ventes quotidiennes (en FCFA) : 20 000, 15 000, 20 000, 25 000, 10 000. Quel est le mode ?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-nous</h3>
+                <p>Email : contact@akagis.com</p>
+                <p>Téléphone : +228 90 12 34 56</p>
+                <div class="social-links">
+                    <a href="#"><img src="../images/icons/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AKAGIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+</body>
+</html>

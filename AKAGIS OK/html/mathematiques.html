@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Mathématiques</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/mathematiques.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </div>
+        <ul class="nav-links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="profil-utilisateur.html" class="btn-login">Profil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale Mathématiques -->
+    <section class="mathematiques">
+        <div class="mathematiques-header">
+            <h2>Bienvenue dans la section Mathématiques</h2>
+            <p>Un espace dédié aux élèves de collège et lycée pour apprendre, poser des questions et résoudre des exercices.</p>
+        </div>
+
+        <!-- Questionnaire pour déterminer le type d'intelligence (affiché la première fois) -->
+        <div class="intelligence-quiz" id="intelligence-quiz">
+            <h3>Découvrons votre type d’intelligence</h3>
+            <p>Pour mieux vous aider, répondez à ces quelques questions (cela ne prendra qu’une minute).</p>
+            <form id="intelligence-form">
+                <div class="quiz-question">
+                    <p>1. Comment préférez-vous apprendre les mathématiques ?</p>
+                    <label><input type="radio" name="q1" value="logique" required> En résolvant des problèmes logiques et en suivant des étapes claires.</label><br>
+                    <label><input type="radio" name="q1" value="visuel"> En utilisant des graphiques, des dessins ou des schémas.</label><br>
+                    <label><input type="radio" name="q1" value="linguistique"> En lisant des explications ou en discutant avec d’autres.</label>
+                </div>
+                <div class="quiz-question">
+                    <p>2. Quand vous rencontrez un problème difficile, que faites-vous ?</p>
+                    <label><input type="radio" name="q2" value="logique" required> J’analyse le problème étape par étape pour trouver une solution.</label><br>
+                    <label><input type="radio" name="q2" value="visuel"> J’essaie de visualiser le problème dans ma tête ou sur papier.</label><br>
+                    <label><input type="radio" name="q2" value="interpersonnel"> Je demande de l’aide à un ami ou à un professeur.</label>
+                </div>
+                <div class="quiz-question">
+                    <p>3. Quelle activité vous aide à mieux comprendre un concept mathématique ?</p>
+                    <label><input type="radio" name="q3" value="logique" required> Faire des exercices pratiques et répéter les calculs.</label><br>
+                    <label><input type="radio" name="q3" value="visuel"> Regarder des vidéos ou dessiner des diagrammes.</label><br>
+                    <label><input type="radio" name="q3" value="linguistique"> Écrire ou expliquer le concept avec mes propres mots.</label>
+                </div>
+                <button type="submit" class="btn-submit">Découvrir mon type d’intelligence</button>
+            </form>
+        </div>
+
+        <!-- Contenu principal (affiché après le questionnaire) -->
+        <div class="mathematiques-content" id="mathematiques-content">
+            <h3>Votre type d’intelligence : <span id="intelligence-type">Non déterminé</span></h3>
+            <p>Explorez nos ressources pour apprendre les mathématiques de manière adaptée à votre style d’apprentissage.</p>
+            <div class="mathematiques-actions">
+                <a href="questions-reponses.html" class="btn-action">Accéder à la section Questions-Réponses</a>
+                <a href="cours-mathematiques.html" class="btn-action">Consulter les cours par classe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-nous</h3>
+                <p>Email : contact@akagis.com</p>
+                <p>Téléphone : +228 90 12 34 56</p>
+                <div class="social-links">
+                    <a href="#"><img src="../images/icons/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AKAGIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+    <script src="../js/mathematiques.js"></script>
+</body>
+</html>

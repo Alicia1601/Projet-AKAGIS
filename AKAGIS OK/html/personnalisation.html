@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Personnalisation</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/personnalisation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="connexion.html" class="btn-login">Connexion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale Personnalisation -->
+    <section class="personnalisation">
+        <h2>Personnalisez votre produit</h2>
+        <div class="upload-section">
+            <input type="file" id="custom-image" accept="image/*">
+            <label for="custom-image">📷 Téléchargez votre image</label>
+            <div class="image-preview" id="image-preview">Aperçu de l'image</div>
+        </div>
+        <div class="order-form">
+            <h3>Informations de commande</h3>
+            <form id="custom-order-form">
+                <div class="form-group">
+                    <label for="product-type">Type de produit</label>
+                    <select id="product-type" name="product-type" required>
+                        <option value="T-shirt">T-shirt</option>
+                        <option value="Carnet">Carnet</option>
+                        <option value="Tableau">Tableau</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="full-name">Nom complet</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adresse de livraison</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Options de personnalisation</label>
+                    <div class="custom-options">
+                        <div>
+                            <label for="size">Taille (pour t-shirts)</label>
+                            <select id="size" name="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="color">Couleur</label>
+                            <select id="color" name="color">
+                                <option value="Blanc">Blanc</option>
+                                <option value="Noir">Noir</option>
+                                <option value="Bleu">Bleu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="tshirt-text-group" style="display: none;">
+                    <label for="tshirt-text">Phrase à ajouter sur le t-shirt (optionnel)</label>
+                    <input type="text" id="tshirt-text" name="tshirt-text" placeholder="Ex: 'Je suis unique !'">
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Méthode de paiement</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="mix-by-yas">Mix by Yas</option>
+                        <option value="flooz">Flooz</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-order">Valider la commande</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="#services">Nos services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-nous</h3>
+                <p>Email : contact@akagis.com</p>
+                <p>Téléphone : +228 90 12 34 56</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AKAGIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+    <script src="../js/personnalisation.js"></script>
+</body>
+</html>

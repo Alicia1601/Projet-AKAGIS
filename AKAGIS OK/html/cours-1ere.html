@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Cours de Mathématiques 1ère</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/cours-classe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </div>
+        <ul class="nav-links">
+            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="profil-utilisateur.html" class="btn-login">Profil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale Cours 1ère -->
+    <section class="cours-classe">
+        <div class="cours-header">
+            <h2>Cours de Mathématiques - 1ère</h2>
+            <p>Programme togolais (APC) pour la classe de 1ère.</p>
+        </div>
+
+        <div class="cours-content">
+            <!-- Chapitre 1 : Dérivées -->
+            <div class="chapitre" id="chapitre1">
+                <h3>Chapitre 1 : Dérivées</h3>
+                <div class="objectifs">
+                    <h4>Objectifs d’apprentissage</h4>
+                    <ul>
+                        <li>Comprendre la notion de dérivée comme taux de variation.</li>
+                        <li>Calculer les dérivées de fonctions simples.</li>
+                        <li>Appliquer les dérivées à des problèmes pratiques.</li>
+                    </ul>
+                </div>
+                <div class="introduction">
+                    <h4>Introduction</h4>
+                    <p>La dérivée d’une fonction mesure son taux de variation. Par exemple, si une fonction donne la position d’un objet, sa dérivée donne sa vitesse. Les dérivées sont essentielles pour étudier les variations des fonctions.</p>
+                </div>
+                <div class="activite">
+                    <h4>Activité pratique : La croissance d’une plante</h4>
+                    <p>Une plante à Dapaong grandit selon la fonction \( h(t) = 2t^2 + 3t \) (en cm), où \( t \) est le temps en semaines. À quelle vitesse grandit-elle après 2 semaines ?</p>
+                    <p><strong>Solution :</strong> La vitesse de croissance est donnée par la dérivée \( h'(t) \). On calcule : \( h'(t) = \frac{d}{dt}(2t^2 + 3t) = 4t + 3 \). À \( t = 2 \), \( h'(2) = 4(2) + 3 = 11 \). La plante grandit à une vitesse de 11 cm par semaine.</p>
+                </div>
+                <div class="exercices">
+                    <h4>Exercices</h4>
+                    <p>1. Calcule la dérivée de \( f(x) = 3x^2 + 5x \).</p>
+                    <p>2. Trouve la dérivée de \( g(x) = 4x^3 - 2x \).</p>
+                    <p>3. La hauteur d’un ballon est donnée par \( h(t) = 5t^2 \) (en mètres). Quelle est sa vitesse à \( t = 3 \) secondes ?</p>
+                </div>
+            </div>
+
+            <!-- Chapitre 2 : Trigonométrie -->
+            <div class="chapitre" id="chapitre2">
+                <h3>Chapitre 2 : Trigonométrie</h3>
+                <div class="objectifs">
+                    <h4>Objectifs d’apprentissage</h4>
+                    <ul>
+                        <li>Comprendre les fonctions trigonométriques (sinus, cosinus, tangente).</li>
+                        <li>Résoudre des équations trigonométriques simples.</li>
+                        <li>Appliquer la trigonométrie à des problèmes géométriques.</li>
+                    </ul>
+                </div>
+                <div class="introduction">
+                    <h4>Introduction</h4>
+                    <p>La trigonométrie étudie les relations entre les angles et les côtés des triangles. Les fonctions sinus, cosinus et tangente sont particulièrement utiles pour résoudre des problèmes impliquant des angles.</p>
+                </div>
+                <div class="activite">
+                    <h4>Activité pratique : La hauteur d’un mât</h4>
+                    <p>Un mât à Tsévié projette une ombre de 10 m. L’angle entre le sol et le rayon du soleil est de 30°. Quelle est la hauteur du mât ?</p>
+                    <p><strong>Solution :</strong> Dans un triangle rectangle, \( \tan(30°) = \frac{\text{hauteur}}{\text{ombre}} \). On sait que \( \tan(30°) = \frac{\sqrt{3}}{3} \approx 0,577 \). Donc, \( 0,577 = \frac{h}{10} \), et \( h = 10 \times 0,577 \approx 5,77 \) m. La hauteur du mât est d’environ 5,77 m.</p>
+                </div>
+                <div class="exercices">
+                    <h4>Exercices</h4>
+                    <p>1. Résous l’équation \( \sin(x) = 0,5 \) pour \( x \in [0, 2\pi] \).</p>
+                    <p>2. Calcule \( \cos(45°) \).</p>
+                    <p>3. Un terrain triangulaire a un angle de 60° et une base de 8 m. Si l’angle opposé à la base est 90°, quelle est la hauteur du triangle ?</p>
+                </div>
+            </div>
+
+            <!-- Chapitre 3 : Systèmes d’équations -->
+            <div class="chapitre" id="chapitre3">
+                <h3>Chapitre 3 : Systèmes d’équations</h3>
+                <div class="objectifs">
+                    <h4>Objectifs d’apprentissage</h4>
+                    <ul>
+                        <li>Résoudre des systèmes de deux équations à deux inconnues.</li>
+                        <li>Utiliser les méthodes de substitution et d’élimination.</li>
+                        <li>Appliquer les systèmes d’équations à des problèmes réels.</li>
+                    </ul>
+                </div>
+                <div class="introduction">
+                    <h4>Introduction</h4>
+                    <p>Un système d’équations est un ensemble d’équations qu’il faut résoudre simultanément. Cela permet de trouver des valeurs qui satisfont toutes les équations en même temps.</p>
+                </div>
+                <div class="activite">
+                    <h4>Activité pratique : Les achats d’Afi</h4>
+                    <p>Afi achète des mangues et des bananes au marché d’Adidogomé. Une mangue coûte 200 FCFA et une banane 100 FCFA. Elle achète 5 fruits au total pour 800 FCFA. Combien de mangues et de bananes a-t-elle achetées ?</p>
+                    <p><strong>Solution :</strong> Posons \( x \) le nombre de mangues et \( y \) le nombre de bananes. On a : <br>1. \( x + y = 5 \) (nombre total de fruits). <br>2. \( 200x + 100y = 800 \) (coût total). Simplifions la deuxième équation : \( 2x + y = 8 \). Soustrayons la première équation de la deuxième : \( (2x + y) - (x + y) = 8 - 5 \), donc \( x = 3 \). Puis, \( 3 + y = 5 \), donc \( y = 2 \). Afi a acheté 3 mangues et 2 bananes.</p>
+                </div>
+                <div class="exercices">
+                    <h4>Exercices</h4>
+                    <p>1. Résous le système : \( \{ 3x + 2y = 7, x - y = 1 \} \).</p>
+                    <p>2. Résous : \( \{ 4x + y = 10, 2x - y = 2 \} \).</p>
+                    <p>3. Un fermier à Kpalimé a 10 animaux (poules et chèvres). Il compte 28 pattes au total. Combien a-t-il de poules et de chèvres ?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-nous</h3>
+                <p>Email : contact@akagis.com</p>
+                <p>Téléphone : +228 90 12 34 56</p>
+                <div class="social-links">
+                    <a href="#"><img src="../images/icons/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AKAGIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+</body>
+</html>

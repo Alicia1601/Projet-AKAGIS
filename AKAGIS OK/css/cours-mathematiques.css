@@ -1,0 +1,89 @@
+/* Section principale */
+.cours-mathematiques {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+.cours-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cours-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.cours-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Contenu */
+.cours-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Sections (Collège et Lycée) */
+.cours-section {
+    margin-bottom: 3rem;
+}
+
+.cours-section h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1.5rem;
+}
+
+/* Niveaux (6ème, 5ème, etc.) */
+.cours-level {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.cours-level h4 {
+    font-size: 1.2rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.cours-level ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.cours-level ul li {
+    margin-bottom: 0.5rem;
+}
+
+.cours-level ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.cours-level ul li a:hover {
+    color: #800080;
+}
+
+.btn-view {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .cours-level {
+        padding: 1rem;
+    }
+}

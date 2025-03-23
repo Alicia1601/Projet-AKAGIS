@@ -1,0 +1,198 @@
+/* Section héros */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #800080;
+    margin-bottom: 1.5rem;
+}
+
+.btn-join {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero-image {
+    max-width: 45%;
+}
+
+.placeholder-image {
+    background-color: #EDE9FE;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #800080;
+    border-radius: 10px;
+}
+
+/* Section abonnements */
+.subscriptions {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.subscriptions h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.subscriptions p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.subscription-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.option {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.option h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.option .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.option .price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.option ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.option ul li {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.btn-subscribe {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Section services */
+.services {
+    padding: 4rem 2rem;
+    background-color: #EDE9FE;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-image {
+    background-color: #EDE9FE;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #800080;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.btn-learn-more {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .subscription-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

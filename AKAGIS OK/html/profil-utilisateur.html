@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAGIS - Profil Utilisateur</title>
+    <link rel="stylesheet" href="../css/styles-communs.css">
+    <link rel="stylesheet" href="../css/profil-utilisateur.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </div>
+        <ul class="nav-links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="profil-utilisateur.html" class="btn-login">Profil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section principale Profil Utilisateur -->
+    <section class="profil-utilisateur">
+        <div class="profil-header">
+            <h2>Mon Profil</h2>
+            <p>Gérez vos informations et consultez vos contributions.</p>
+        </div>
+
+        <div class="profil-content">
+            <!-- Informations personnelles -->
+            <div class="profil-section">
+                <h3>Informations personnelles</h3>
+                <div class="profil-info">
+                    <div class="info-item">
+                        <label>Nom d’utilisateur :</label>
+                        <span id="username">Akou_92</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Email :</label>
+                        <span id="email">akou92@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <label>Date d’inscription :</label>
+                        <span id="join-date">15 janvier 2025</span>
+                    </div>
+                    <button class="btn-edit" id="edit-info-btn">Modifier</button>
+                </div>
+
+                <!-- Formulaire de modification (caché par défaut) -->
+                <form id="edit-info-form" class="edit-form hidden">
+                    <div class="form-group">
+                        <label for="edit-username">Nom d’utilisateur</label>
+                        <input type="text" id="edit-username" name="username" value="Akou_92" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-email">Email</label>
+                        <input type="email" id="edit-email" name="email" value="akou92@example.com" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Enregistrer</button>
+                    <button type="button" class="btn-cancel" id="cancel-edit-btn">Annuler</button>
+                </form>
+            </div>
+
+            <!-- Œuvres publiées -->
+            <div class="profil-section">
+                <h3>Mes œuvres publiées</h3>
+                <div class="profil-works">
+                    <div class="work-item">
+                        <h4>Les échos de la savane</h4>
+                        <p>Un poème sur la beauté de la nature togolaise.</p>
+                        <a href="oeuvre-echos-savane.html" class="btn-view">Voir l’œuvre</a>
+                    </div>
+                    <div class="work-item">
+                        <h4>Le chant des ancêtres</h4>
+                        <p>Une nouvelle sur les traditions d’un village oublié.</p>
+                        <a href="oeuvre-chant-ancetres.html" class="btn-view">Voir l’œuvre</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commentaires publiés -->
+            <div class="profil-section">
+                <h3>Mes commentaires</h3>
+                <div class="profil-comments">
+                    <div class="comment-item">
+                        <h4>Sur "Naruto - L’Empire caché"</h4>
+                        <p>Un livre fascinant ! L’histoire est pleine de rebondissements.</p>
+                        <a href="commentaires-oeuvre.html?oeuvre=naruto-empire" class="btn-view">Voir les commentaires</a>
+                    </div>
+                    <div class="comment-item">
+                        <h4>Sur "Le rêve d’un pays perdu"</h4>
+                        <p>Une belle plongée dans la culture togolaise. Très émouvant !</p>
+                        <a href="commentaires-oeuvre.html?oeuvre=pays-perdu" class="btn-view">Voir les commentaires</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>AKAGIS</h3>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-nous</h3>
+                <p>Email : contact@akagis.com</p>
+                <p>Téléphone : +228 90 12 34 56</p>
+                <div class="social-links">
+                    <a href="#"><img src="../images/icons/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 AKAGIS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/scripts-communs.js"></script>
+    <script src="../js/profil-utilisateur.js"></script>
+</body>
+</html>

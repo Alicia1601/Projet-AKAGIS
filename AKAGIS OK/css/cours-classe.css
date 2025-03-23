@@ -1,0 +1,72 @@
+/* Section principale */
+.cours-classe {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+.cours-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cours-header h2 {
+    font-size: 2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.cours-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Contenu */
+.cours-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Chapitre */
+.chapitre {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.chapitre h3 {
+    font-size: 1.5rem;
+    color: #800080;
+    margin-bottom: 1rem;
+}
+
+.chapitre h4 {
+    font-size: 1.2rem;
+    color: #800080;
+    margin-bottom: 0.5rem;
+}
+
+.chapitre p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.chapitre ul {
+    list-style: disc;
+    padding-left: 2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.chapitre ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .chapitre {
+        padding: 1.5rem;
+    }
+}
