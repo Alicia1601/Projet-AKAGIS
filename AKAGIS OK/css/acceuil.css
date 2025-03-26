@@ -28,7 +28,16 @@
 }
 
 .hero-image {
-    max-width: 45%;
+    flex: 1;
+    max-width: 80%; /* Réduit la taille de la zone de l'image */
+    text-align: right; /* Aligne l'image à droite */
+}
+
+.hero-image img {
+    width: 100%; /* L'image remplit son conteneur */
+    max-width: 2000px; /* Limite la taille maximale à 2000px (ajuste cette valeur) */
+    height: auto; /* Garde les proportions */
+    object-fit: contain; /* Assure que l'image reste proportionnée */
 }
 
 .placeholder-image {
@@ -112,10 +121,10 @@
     cursor: pointer;
 }
 
-/* Section services */
+/* Section Services */
 .services {
     padding: 4rem 2rem;
-    background-color: #EDE9FE;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
@@ -126,73 +135,166 @@
 }
 
 .service-cards {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
     background-color: #fff;
-    padding: 2rem;
     border-radius: 15px;
-    width: 300px;
-    text-align: left;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card-image {
-    background-color: #EDE9FE;
-    height: 150px;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #800080;
+    width: 100%; /* Remplit toute la largeur de la carte */
+    height: 200px; /* Hauteur fixe augmentée pour plus de visibilité */
+    object-fit: cover; /* Remplit le conteneur en recadrant si nécessaire */
+    display: block; /* Évite les espaces indésirables sous l'image */
 }
 
 .card h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    color: #800080;
+    margin: 1rem;
 }
 
 .card p {
     color: #666;
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem;
 }
 
 .btn-learn-more {
+    display: block;
     background-color: #800080;
     color: #fff;
     padding: 0.5rem 1rem;
-    border: none;
     border-radius: 20px;
-    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 1rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #660066;
 }
 
 /* Responsivité */
 @media (max-width: 768px) {
+    /* Section héros */
     .hero {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Empile le contenu et l'image */
+        padding: 2rem 1rem; /* Réduit le padding sur mobile */
+        text-align: center; /* Centre le texte */
     }
 
     .hero-content {
-        max-width: 100%;
-        margin-bottom: 2rem;
+        max-width: 100%; /* Prend toute la largeur */
+        margin-bottom: 2rem; /* Espacement avant l'image */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem; /* Réduit la taille du titre */
+    }
+
+    .btn-join {
+        padding: 0.6rem 1.2rem; /* Réduit légèrement le bouton */
+        font-size: 0.9rem;
     }
 
     .hero-image {
-        max-width: 100%;
+        max-width: 100%; /* Prend toute la largeur */
+        text-align: center; /* Centre l'image */
+    }
+
+    .hero-image img {
+        max-width: 100%; /* Limite l'image à la largeur de l'écran */
+        width: auto; /* Garde les proportions */
+    }
+
+    .placeholder-image {
+        height: 150px; /* Réduit la hauteur du placeholder */
+    }
+
+    /* Section abonnements */
+    .subscriptions {
+        padding: 2rem 1rem; /* Réduit le padding */
+    }
+
+    .subscriptions h2 {
+        font-size: 1.5rem; /* Réduit la taille du titre */
+    }
+
+    .subscriptions p {
+        font-size: 1rem; /* Réduit la taille du texte */
     }
 
     .subscription-options {
-        flex-direction: column;
+        flex-direction: column; /* Empile les options */
         align-items: center;
+        gap: 1.5rem;
+    }
+
+    .option {
+        width: 100%; /* Prend toute la largeur disponible */
+        max-width: 350px; /* Limite la largeur maximale */
+        padding: 1.5rem; /* Réduit le padding interne */
+    }
+
+    .option h3 {
+        font-size: 1.1rem; /* Réduit légèrement le titre */
+    }
+    .Taille {
+        font-size: 16px; /* Réduit mais reste lisible (au lieu de 10px) */
+        font-family: 'Times New Roman', Times, serif;
+        color: #800080; /* Violet AKAGIS, plus cohérent que #020002 */
+    }
+
+    .option .price {
+        font-size: 1.3rem; /* Réduit la taille du prix */
+    }
+
+    .btn-subscribe {
+        padding: 0.4rem 0.8rem; /* Réduit le bouton */
+        font-size: 0.9rem;
+    }
+
+    /* Section Services */
+    .services {
+        padding: 2rem 1rem; /* Réduit le padding */
+    }
+
+    .services h2 {
+        font-size: 1.5rem; /* Réduit la taille du titre */
     }
 
     .service-cards {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* Une colonne sur mobile (déjà présent) */
+    }
+
+    .card-image {
+        height: 150px; /* Réduit la hauteur sur mobile (déjà présent) */
+    }
+
+    .card h3 {
+        font-size: 1.1rem; /* Réduit légèrement le titre */
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Réduit la taille du texte */
+    }
+
+    .btn-learn-more {
+        padding: 0.4rem 0.8rem; /* Réduit le bouton */
+        font-size: 0.9rem;
     }
 }

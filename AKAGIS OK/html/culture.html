@@ -12,7 +12,9 @@
     <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="logo">
+            <a href="acceuil.html">
             <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </a>
         </div>
         <ul class="nav-links">
             <li><a href="acceuil.html">Acceuil</a></li>
@@ -23,55 +25,57 @@
         </ul>
     </nav>
 
-    <!-- Section principale Culture -->
-    <section class="culture">
-        <div class="culture-header">
+    <section class="forum">
+        <div class="forum-header">
             <h2>Forum Culturel</h2>
             <p>Participez à des discussions vibrantes sur la culture togolaise et internationale.</p>
         </div>
-
         <div class="culture-content">
-            <!-- Liste des fils de discussion -->
             <div class="threads">
                 <div class="thread">
                     <div class="thread-header">
                         <h3>Les traditions togolaises : un patrimoine à préserver</h3>
-                        <span class="thread-meta">Par Kofi Adam • 12 réponses • 3 jours</span>
+                    </div>
+                    <div class="thread-meta">
+                        <span>Par Kofi Adam</span> • <span>12 réponses</span> • <span>3 jours</span>
                     </div>
                     <p>Quelles traditions togolaises vous tiennent à cœur ? Partagez vos souvenirs et idées pour les préserver.</p>
-                    <a href="#" class="btn-join-thread">Rejoindre la discussion</a>
+                    <a href="discussion.html" class="btn-join-thread">Rejoindre la discussion</a>
                 </div>
                 <div class="thread">
                     <div class="thread-header">
                         <h3>L’impact de la littérature africaine sur le monde</h3>
-                        <span class="thread-meta">Par Alice K. Amoussou • 8 réponses • 5 jours</span>
+                    </div>
+                    <div class="thread-meta">
+                        <span>Par Alice K. Amoussou</span> • <span>8 réponses</span> • <span>5 jours</span>
                     </div>
                     <p>Comment la littérature africaine influence-t-elle la culture mondiale ? Discutons des auteurs qui vous inspirent.</p>
-                    <a href="#" class="btn-join-thread">Rejoindre la discussion</a>
+                    <a href="discussion.html" class="btn-join-thread">Rejoindre la discussion</a>
                 </div>
                 <div class="thread">
                     <div class="thread-header">
                         <h3>Les festivals culturels : une célébration de la diversité</h3>
-                        <span class="thread-meta">Par Nyatika Bernadin • 15 réponses • 1 semaine</span>
+                    </div>
+                    <div class="thread-meta">
+                        <span>Par Nyatika Bernadin</span> • <span>15 réponses</span> • <span>1 semaine</span>
                     </div>
                     <p>Quels festivals culturels avez-vous visités ? Partagez vos expériences et recommandations.</p>
-                    <a href="#" class="btn-join-thread">Rejoindre la discussion</a>
+                    <a href="discussion.html" class="btn-join-thread">Rejoindre la discussion</a>
                 </div>
             </div>
-
-            <!-- Formulaire pour créer un nouveau fil -->
-            <div class="new-thread-form">
+            <!-- Formulaire (inchangé) -->
+            <div class="forum-form">
                 <h3>Créer une nouvelle discussion</h3>
-                <form id="new-thread-form">
+                <form action="#" method="post">
                     <div class="form-group">
-                        <label for="thread-title">Titre de la discussion</label>
-                        <input type="text" id="thread-title" name="title" required>
+                        <label for="discussion-title">Titre de la discussion</label>
+                        <input type="text" id="discussion-title" name="discussion-title" placeholder="Entrez le titre de votre discussion" required>
                     </div>
                     <div class="form-group">
-                        <label for="thread-content">Description</label>
-                        <textarea id="thread-content" name="content" rows="4" required></textarea>
+                        <label for="discussion-description">Description</label>
+                        <textarea id="discussion-description" name="discussion-description" placeholder="Décrivez votre sujet de discussion" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Créer la discussion</button>
+                    <button type="submit" class="btn-create-discussion">Créer la discussion</button>
                 </form>
             </div>
         </div>
@@ -96,12 +100,12 @@
             </div>
             <div class="footer-section contact">
                 <h3>Contactez-nous</h3>
-                <p>Email : contact@akagis.com</p>
-                <p>Téléphone : +228 90 12 34 56</p>
+                <p>Email : <a href="mailto:contact@akagis.com">contact@akagis.com</a></p>
+                <p>Téléphone : +228 91 41 20 03</p>
                 <div class="social-links">
-                    <a href="#"><img src="../images/icons/facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="../images/icons/twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://facebook.com/akagis"><img src="../images/facebook-icon.jpg" alt="Facebook"></a>
+                    <a href="https://twitter.com/akagis"><img src="../images/twitter-icon.jpg" alt="Twitter"></a>
+                    <a href="https://instagram.com/akagis"><img src="../images/instagram-icon.jpg" alt="Instagram"></a>
                 </div>
             </div>
         </div>

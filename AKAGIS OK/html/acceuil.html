@@ -14,7 +14,9 @@
     <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="logo">
+            <a href="acceuil.html">
             <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
+        </a>
         </div>
         <ul class="nav-links">
             <li><a href="acceuil.html">Acceuil</a></li>
@@ -29,10 +31,10 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Transformons l’éducation en alliant savoir académique et créativité</h1>
-            <button class="btn-join">Nous-rejoindre</button>
+            <a href="contact.html" class="btn-join">Nous rejoindre</a>
         </div>
         <div class="hero-image">
-            <div class="placeholder-image">Illustration d’étudiants</div>
+            <img src="../images/etudiants-hero.jpg" alt="Illustration d’étudiants">
         </div>
     </section>
 
@@ -41,80 +43,109 @@
         <h2>Nos services</h2>
         <div class="service-cards">
             <div class="card">
-                <div class="card-image">Image Littérature</div>
+                <img src="../images/litterature-service.jpg" alt="Image Littérature" class="card-image">
                 <h3>Un espace dédié à la littérature et à la culture</h3>
                 <p>Plongez dans l’univers des mots, explorez et partagez vos créations littéraires.</p>
-                <button class="btn-learn-more">Accéder</button>
+                <a href="culture-litterature.html" class="btn-learn-more">Accéder</a>
             </div>
             <div class="card">
-                <div class="card-image">Image Mathématiques</div>
+                <img src="../images/mathematiques-service.jpg" alt="Image Mathématiques" class="card-image">
                 <h3>Un soutien personnalisé en mathématiques</h3>
                 <p>Nos adaptations et explications rendent les mathématiques accessibles à tous.</p>
-                <button class="btn-learn-more">Accéder</button>
+                <a href="mathematiques.html" class="btn-learn-more">Accéder</a>
             </div>
             <div class="card">
-                <div class="card-image">Image E-commerce</div>
+                <img src="../images/ecommerce-service.jpg" alt="Image E-commerce" class="card-image">
                 <h3>Une touche de créativité avec la personnalisation</h3>
                 <p>Personnalisez vos t-shirts, carnets et tableaux avec vos designs préférés.</p>
-                <button class="btn-learn-more">Accéder</button>
+                <a href="catalogue.html" class="btn-learn-more">Accéder</a>
             </div>
         </div>
     </section>
 
-     <!-- Section abonnements -->
-     <section class="subscriptions">
-        <h2>Un accès illimité</h2>
-        <p>Débloquer un accès complet à toutes les fonctionnalités</p>
-        <div class="subscription-options">
-            <div class="option">
-                <h3>Élèves d’écoles partenaires</h3>
-                <p class="price">1000 FCFA<span>/mois</span></p>
-                <ul>
-                    <li>✔ Accès complet à la section Culture & Littérature</li>
-                    <li>✔ Accès complet à la section Mathématiques</li>
-                    <li>✔ Support personnalisé</li>
-                </ul>
-                <button class="btn-subscribe">S'abonner</button>
-            </div>
-            <div class="option">
-                <h3>Autres utilisateurs</h3>
-                <p class="price">2000 FCFA<span>/mois</span></p>
-                <ul>
-                    <li>✔ Accès complet à la section Culture & Littérature</li>
-                    <li>✔ Accès complet à la section Mathématiques</li>
-                    <li>✔ Support personnalisé</li>
-                </ul>
-                <button class="btn-subscribe">S'abonner</button>
-            </div>
+     
+    <!-- Section abonnements -->
+<section class="subscriptions">
+    <h2>Un accès illimité</h2>
+    <p>Débloquez un accès complet à toutes les fonctionnalités d’AKAGIS et profitez d’une expérience éducative et créative adaptée à vos besoins.</p>
+    <div class="subscription-options">
+        <!-- Pack 1 : Écoles partenaires (gestion) -->
+        <div class="option">
+            <h2 class="Taille">Pack Clé-Gestion</h2>
+            <h3>Écoles partenaires</h3>
+            <p class="price">1500 FCFA <span>/an par élève</span></p>
+            <ul>
+                <li>✔ Gestion et repartition des classes</li>
+                <li>✔ Suivi des performances</li>
+                <li>✔ Gestion des emplois du temps</li>
+                <li>✔ Accès à la personnalisation sans abonnement</li>
+            </ul>
+            <a href="inscription.html" class="btn-subscribe">S'abonner</a>
         </div>
-    </section>
+        <!-- Pack 2 : Élèves des écoles partenaires -->
+        <div class="option">
+            <h2 class="Taille">Pack Pass Élève</h2>
+            <h3>Élèves partenaires</h3>
+            <p class="price">1500 FCFA <span>/mois</span></p>
+            <ul>
+                <li>✔ Accès complet à Culture & Littérature</li>
+                <li>✔ Accès complet aux Mathématiques</li>
+                <li>✔ Accès à la personnalisation sans abonnement</li>
+            </ul>
+            <a href="inscription.html" class="btn-subscribe">S'abonner</a>
+        </div>
+        <!-- Pack 3 : Élèves indépendants -->
+        <div class="option">
+            <h2 class="Taille">Pack Passeport </h2>
+            <h3>Élèves indépendants</h3>
+            <p class="price">2500 FCFA <span>/mois</span></p>
+            <ul>
+                <li>✔ Accès complet à Culture & Littérature</li>
+                <li>✔ Accès complet aux Mathématiques</li>
+                <li>✔ Accès à la personnalisation sans abonnement</li>
+            </ul>
+            <a href="inscription.html" class="btn-subscribe">S'abonner</a>
+        </div>
+        <!-- Pack 4 : Gratuit -->
+        <div class="option free">
+            <h2 class="Taille">Pack Essai</h2>
+            <h3>Gratuit</h3>
+            <p class="price">0 FCFA <span>/mois</span></p>
+            <ul>
+                <li>✔ Culture & Littérature (3h/mois)</li>
+                <li>✔ Mathématiques (3 questions/mois)</li>
+                <li>✔ Accès à la personnalisation sans abonnement</li>
+            </ul>
+            <a href="inscription.html" class="btn-subscribe">Commencer</a>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section about">
                 <h3>AKAGIS</h3>
-                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous
-                    pour explorer, apprendre et créer !</p>
+                <p>Une plateforme éducative et culturelle pour allier savoir académique et créativité. Rejoignez-nous pour explorer, apprendre et créer !</p>
             </div>
             <div class="footer-section links">
                 <h3>Liens utiles</h3>
                 <ul>
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="#services">Nos services</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#a-propos">À propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section contact">
                 <h3>Contactez-nous</h3>
-                <p>Email : contact@akagis.com</p>
-                <p>Téléphone : +228 90 12 34 56</p>
+                <p>Email : <a href="mailto:contact@akagis.com">contact@akagis.com</a></p>
+                <p>Téléphone : +228 91 41 20 03</p>
                 <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+                    <a href="https://facebook.com/akagis"><img src="../images/facebook-icon.jpg" alt="Facebook"></a>
+                    <a href="https://twitter.com/akagis"><img src="../images/twitter-icon.jpg" alt="Twitter"></a>
+                    <a href="https://instagram.com/akagis"><img src="../images/instagram-icon.jpg" alt="Instagram"></a>
                 </div>
             </div>
         </div>
@@ -124,7 +155,7 @@
     </footer>
 
     <script src="../js/scripts-communs.js"></script>
-    <script src="../js/accueil.js"></script>
+    <script src="../js/acceuil.js"></script>
 </body>
 
 </html>

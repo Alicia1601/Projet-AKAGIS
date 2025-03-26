@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <link rel="stylesheet" href="../css/catalogue.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="logo">
+            <a href="acceuil.html">
             <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
         </div>
         <ul class="nav-links">
@@ -28,30 +31,40 @@
         <h2>Nos produits personnalisés</h2>
         <div class="product-gallery">
             <div class="product-card">
-                <div class="product-image">🖼️ T-shirt "Étoile"</div>
+                <img src="../images/tshirt-etoile.jpg" alt="T-shirt Étoile" class="product-image">
                 <h3>T-shirt "Étoile"</h3>
-                <button class="btn-add-to-cart" data-product='{"name": "T-shirt Étoile", "type": "T-shirt", "price": 5000}'>Ajouter au panier</button>
+                <button class="btn-add-to-cart"
+                    data-product='{"name": "T-shirt Étoile", "type": "T-shirt", "price": 3500}'>Ajouter au
+                    panier</button>
             </div>
             <div class="product-card">
-                <div class="product-image">🖼️ Carnet "Nature"</div>
+                <img src="../images/carnet-nature.jpg" alt="Carnet Nature" class="product-image">
                 <h3>Carnet "Nature"</h3>
-                <button class="btn-add-to-cart" data-product='{"name": "Carnet Nature", "type": "Carnet", "price": 3000}'>Ajouter au panier</button>
+                <button class="btn-add-to-cart"
+                    data-product='{"name": "Carnet Nature", "type": "Carnet", "price": 3000}'>Ajouter au panier</button>
             </div>
             <div class="product-card">
-                <div class="product-image">🖼️ Tableau "Soleil"</div>
+                <img src="../images/tableau-soleil.jpg" alt="Tableau Soleil" class="product-image">
                 <h3>Tableau "Soleil"</h3>
-                <button class="btn-add-to-cart" data-product='{"name": "Tableau Soleil", "type": "Tableau", "price": 10000}'>Ajouter au panier</button>
+                <button class="btn-add-to-cart"
+                    data-product='{"name": "Tableau Soleil", "type": "Tableau", "price": 2000}'>Ajouter au
+                    panier</button>
             </div>
             <div class="product-card">
-                <div class="product-image">🖼️ T-shirt "Vague"</div>
+                <img src="../images/tshirt-vague.jpg" alt="T-shirt Vague" class="product-image">
                 <h3>T-shirt "Vague"</h3>
-                <button class="btn-add-to-cart" data-product='{"name": "T-shirt Vague", "type": "T-shirt", "price": 5000}'>Ajouter au panier</button>
+                <button class="btn-add-to-cart"
+                    data-product='{"name": "T-shirt Vague", "type": "T-shirt", "price": 4500}'>Ajouter au
+                    panier</button>
             </div>
             <div class="product-card">
-                <div class="product-image">🖼️ Carnet "Galaxie"</div>
+                <img src="../images/carnet-galaxie.jpg" alt="Carnet Galaxie" class="product-image">
                 <h3>Carnet "Galaxie"</h3>
-                <button class="btn-add-to-cart" data-product='{"name": "Carnet Galaxie", "type": "Carnet", "price": 3000}'>Ajouter au panier</button>
+                <button class="btn-add-to-cart"
+                    data-product='{"name": "Carnet Galaxie", "type": "Carnet", "price": 3000}'>Ajouter au
+                    panier</button>
             </div>
+
         </div>
         <div class="catalogue-options">
             <p>Choisissez une image dans notre catalogue ou ajoutez votre propre design !</p>
@@ -63,7 +76,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section about">
@@ -74,20 +86,20 @@
                 <h3>Liens utiles</h3>
                 <ul>
                     <li><a href="acceuil.html">Acceuil</a></li>
-                    <li><a href="#services">Nos services</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#a-propos">À propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section contact">
                 <h3>Contactez-nous</h3>
-                <p>Email : contact@akagis.com</p>
-                <p>Téléphone : +228 90 12 34 56</p>
+                <p>Email : <a href="mailto:contact@akagis.com">contact@akagis.com</a></p>
+                <p>Téléphone : +228 91 41 20 03</p>
                 <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+                    <a href="https://facebook.com/akagis"><img src="../images/facebook-icon.jpg" alt="Facebook"></a>
+                    <a href="https://twitter.com/akagis"><img src="../images/twitter-icon.jpg" alt="Twitter"></a>
+                    <a href="https://instagram.com/akagis"><img src="../images/instagram-icon.jpg" alt="Instagram"></a>
                 </div>
             </div>
         </div>
@@ -99,4 +111,5 @@
     <script src="../js/scripts-communs.js"></script>
     <script src="../js/catalogue.js"></script>
 </body>
+
 </html>

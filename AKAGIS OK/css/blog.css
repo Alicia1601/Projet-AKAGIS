@@ -44,6 +44,12 @@
     overflow: hidden;
     transition: transform 0.3s ease;
 }
+.article-card a {
+    background-color: rgb(75, 7, 70);
+    border-radius: 5px;
+    color: #f9f9f9;
+
+}
 
 .article-card:hover {
     transform: translateY(-5px);
@@ -64,6 +70,17 @@
 .article-card p {
     color: #666;
     margin: 0 1rem 1rem;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px; /* Hauteur par défaut pour les autres cartes */
+    object-fit: cover;
+    display: block;
+}
+
+.personnalisation-card .article-image {
+    height: 600px; /* Hauteur spécifique pour Personnalisation.jpg */
 }
 
 .btn-read-more {

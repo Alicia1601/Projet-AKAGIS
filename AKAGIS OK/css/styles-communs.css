@@ -12,26 +12,71 @@ body {
     line-height: 1.6;
 }
 
-/* Barre de navigation */
 .navbar {
-    background-color: #fff;
-    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #800080;
+    height: 30px; /* Hauteur du conteneur */
+    display: flex;
+    align-items: center; /* Centre l'image verticalement */
+}
+
+.logo img {
+    width: 160px; /* Réduit la largeur de l'image (ajuste cette valeur selon tes besoins) */
+    height: auto; /* Garde les proportions de l'image */
+    object-fit: contain; /* Assure que l'image reste bien proportionnée */
+    margin-top: 40px;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #800080;
+    font-weight: 600;
+}
+
+.btn-login {
+    background-color: #800080;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 0.5rem;
+    }
+    .nav-links li a {
+        font-size: clamp(14px, 4vw, 16px); /* Texte adaptable */
+    }
+}
+.social-links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
 }
 
 .nav-links li {
@@ -45,7 +90,7 @@ body {
 }
 
 .btn-login {
-    background-color: #800080;
+    background-color: #af5baf;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 20px;
