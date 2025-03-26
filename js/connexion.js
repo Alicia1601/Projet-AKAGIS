@@ -4,6 +4,6 @@ if (loginForm) {
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
         alert('Connexion réussie ! Vous allez être redirigé vers votre tableau de bord.');
-        window.location.href = 'accueil.html'; // Redirection simulée
+        window.location.href = '../index.html'; // Redirection simulée
     });
 }

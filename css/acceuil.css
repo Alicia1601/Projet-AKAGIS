@@ -256,9 +256,12 @@
     .Taille {
         font-size: 16px; /* Réduit mais reste lisible (au lieu de 10px) */
         font-family: 'Times New Roman', Times, serif;
-        color: #800080; /* Violet AKAGIS, plus cohérent que #020002 */
+        color: #642764; /* Violet AKAGIS, plus cohérent que #020002 */
     }
+.Pack {
+    color: #642764;
 
+}
     .option .price {
         font-size: 1.3rem; /* Réduit la taille du prix */
     }
