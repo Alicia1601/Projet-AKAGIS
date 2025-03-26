@@ -3,66 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAGIS - Contact</title>
+    <title>AKAGIS - Commentaires</title>
     <link rel="stylesheet" href="../css/styles-communs.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/commentaires-oeuvre.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="logo">
-            <a href="acceuil.html">
+            <a href="../index.html">
             <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
         </a>
         </div>
         <ul class="nav-links">
-            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="../index.html">Acceuil</a></li>
             <li><a href="services.html">Nos services</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="connexion.html" class="btn-login">Connexion</a></li>
+            
         </ul>
     </nav>
 
-    <!-- Section principale Contact -->
-    <section class="contact">
-        <div class="contact-header">
-            <h2>Contactez-nous</h2>
-            <p>Nous sommes là pour répondre à vos questions. Remplissez le formulaire ci-dessous ou contactez-nous directement !</p>
+    <!-- Section principale Commentaires -->
+    <section class="commentaires-oeuvre">
+        <div class="commentaires-header">
+            <h2 id="oeuvre-title">Commentaires</h2>
+            <p>Partagez votre avis sur cette œuvre avec la communauté.</p>
         </div>
 
-        <div class="contact-content">
-            <!-- Formulaire de contact -->
-            <div class="contact-form">
-                <h3>Envoyez-nous un message</h3>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Envoyer</button>
-                </form>
+        <div class="commentaires-content">
+            <!-- Liste des commentaires -->
+            <div class="comments" id="comments-list">
+                <!-- Les commentaires seront insérés dynamiquement via JavaScript -->
             </div>
 
-            <!-- Informations de contact -->
-            <div class="contact-info">
-                <h3>Nos coordonnées</h3>
-                <p><strong>Email :</strong> contact@akagis.com</p>
-                <p><strong>Téléphone :</strong> +228 90 12 34 56</p>
-                <div class="social-links">
-                    <a href="#"><img src="../images/facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="../images/twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="../images/instagram-icon.png" alt="Instagram"></a>
-                </div>
+            <!-- Formulaire pour ajouter un commentaire -->
+            <div class="comment-form">
+                <h3>Ajoutez votre commentaire</h3>
+                <form id="comment-form">
+                    <div class="form-group">
+                        <label for="comment-name">Votre nom</label>
+                        <input type="text" id="comment-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Votre commentaire</label>
+                        <textarea id="comment-text" name="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Publier</button>
+                </form>
             </div>
         </div>
     </section>
@@ -77,7 +66,7 @@
             <div class="footer-section links">
                 <h3>Liens utiles</h3>
                 <ul>
-                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="../index.html">Acceuil</a></li>
                     <li><a href="services.html">Nos services</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
@@ -101,6 +90,6 @@
     </footer>
 
     <script src="../js/scripts-communs.js"></script>
-    <script src="../js/contact.js"></script>
+    <script src="../js/commentaires-oeuvre.js"></script>
 </body>
 </html>

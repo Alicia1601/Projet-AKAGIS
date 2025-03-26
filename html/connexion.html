@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAGIS - E-commerce</title>
+    <title>AKAGIS - Connexion</title>
     <link rel="stylesheet" href="../css/styles-communs.css">
-    <link rel="stylesheet" href="../css/ecommerce.css">
+    <link rel="stylesheet" href="../css/connexion.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="logo">
-            <a href="acceuil.html">
+            <a href="../index.html">
             <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
         </a>
         </div>
         <ul class="nav-links">
-            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="../index.html">Acceuil</a></li>
             <li><a href="services.html">Nos services</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="connexion.html" class="btn-login">Connexion</a></li>
+            
         </ul>
     </nav>
 
-    <!-- Section principale E-commerce -->
-    <section class="ecommerce">
-        <div class="intro">
-            <h2>Personnalisez vos produits avec AKAGIS !</h2>
-            <p>Exprimez votre créativité en personnalisant des t-shirts, carnets et tableaux. Choisissez parmi notre catalogue d’images ou téléchargez votre propre design pour créer un produit unique qui vous ressemble.</p>
-        </div>
-        <div class="options">
-            <a href="catalogue.html" class="btn-option">Accéder au catalogue</a>
-            <a href="personnalisation.html" class="btn-option">Télécharger votre propre image</a>
+    <!-- Section connexion -->
+    <section class="login">
+        <div class="login-container">
+            <h2>Connexion</h2>
+            <p>Connectez-vous pour accéder à votre espace AKAGIS.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-submit">Se connecter</button>
+            </form>
+            <p class="signup-link">Pas de compte ? <a href="inscription.html">Inscrivez-vous</a></p>
         </div>
     </section>
 
@@ -47,7 +55,7 @@
             <div class="footer-section links">
                 <h3>Liens utiles</h3>
                 <ul>
-                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="../index.html">Acceuil</a></li>
                     <li><a href="services.html">Nos services</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
@@ -71,6 +79,6 @@
     </footer>
 
     <script src="../js/scripts-communs.js"></script>
-    <script src="../js/ecommerce.js"></script>
+    <script src="../js/connexion.js"></script>
 </body>
 </html>

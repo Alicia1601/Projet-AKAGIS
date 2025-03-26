@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAGIS - Inscription</title>
+    <title>AKAGIS - Panier</title>
     <link rel="stylesheet" href="../css/styles-communs.css">
-    <link rel="stylesheet" href="../css/inscription.css">
+    <link rel="stylesheet" href="../css/panier.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="logo">
-            <a href="acceuil.html">
+            <a href="../index.html">
             <img src="../images/logo-akagis.png" alt="Logo AKAGIS">
         </a>
         </div>
         <ul class="nav-links">
-            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="../index.html">Acceuil</a></li>
             <li><a href="services.html">Nos services</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="a-propos.html">À propos</a></li>
             <li><a href="connexion.html" class="btn-login">Connexion</a></li>
         </ul>
     </nav>
-
-    <!-- Section inscription -->
-    <section class="signup">
-        <div class="signup-container">
-            <h2>Inscription</h2>
-            <p>Créez votre compte pour accéder à toutes les fonctionnalités d’AKAGIS.</p>
-            <form id="signup-form">
+    <!-- Section principale Panier -->
+    <section class="panier">
+        <h2>Votre Panier</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Les articles seront ajoutés dynamiquement via JS -->
+        </div>
+        <div class="order-form">
+            <h3>Finaliser votre commande</h3>
+            <form id="order-form">
                 <div class="form-group">
                     <label for="full-name">Nom complet</label>
                     <input type="text" id="full-name" name="full-name" required>
@@ -40,16 +42,48 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
                 </div>
-                <div class="form-group checkbox">
-                    <input type="checkbox" id="school-partner" name="school-partner">
-                    <label for="school-partner">Je suis élève d’une école partenaire</label>
+                <div class="form-group">
+                    <label for="address">Adresse de livraison</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
                 </div>
-                <button type="submit" class="btn-submit">S’inscrire</button>
+                <div class="form-group">
+                    <label>Options de personnalisation</label>
+                    <div class="custom-options">
+                        <div>
+                            <label for="size">Taille (pour t-shirts)</label>
+                            <select id="size" name="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="color">Couleur</label>
+                            <select id="color" name="color">
+                                <option value="Blanc">Blanc</option>
+                                <option value="Noir">Noir</option>
+                                <option value="Bleu">Bleu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="tshirt-text-group" style="display: none;">
+                    <label for="tshirt-text">Phrase à ajouter sur le t-shirt (optionnel)</label>
+                    <input type="text" id="tshirt-text" name="tshirt-text" placeholder="Ex: 'Je suis unique !'">
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Méthode de paiement</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="mix-by-yas">Mix by Yas</option>
+                        <option value="flooz">Flooz</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-order">Valider la commande</button>
             </form>
-            <p class="login-link">Déjà un compte ? <a href="connexion.html">Connectez-vous</a></p>
         </div>
     </section>
 
@@ -63,7 +97,7 @@
             <div class="footer-section links">
                 <h3>Liens utiles</h3>
                 <ul>
-                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="../index.html">Acceuil</a></li>
                     <li><a href="services.html">Nos services</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="a-propos.html">À propos</a></li>
@@ -87,6 +121,6 @@
     </footer>
 
     <script src="../js/scripts-communs.js"></script>
-    <script src="../js/inscription.js"></script>
+    <script src="../js/panier.js"></script>
 </body>
 </html>
