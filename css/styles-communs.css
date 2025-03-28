@@ -105,10 +105,16 @@ body {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Répartit les sections uniformément */
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap; /* Permet aux sections de passer à la ligne si nécessaire */
+}
+
+.footer-section {
+    flex: 1; /* Chaque section prend une part égale de l'espace */
+    min-width: 200px; /* Assure une largeur minimale pour éviter un tassement */
 }
 
 .footer-section h3 {
@@ -153,16 +159,6 @@ body {
 
 /* Responsivité */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -172,5 +168,10 @@ body {
         display: flex;
         justify-content: center;
         gap: 1rem;
+    }
+
+    .footer-section {
+        min-width: unset; /* Réinitialise la largeur minimale sur petits écrans */
+        margin-bottom: 1.5rem; /* Ajoute un espace entre les sections empilées */
     }
 }

@@ -47,7 +47,7 @@ span {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    background: #fff; /* Remplace #f4f4f4 par blanc */
+    background: transparent;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -80,6 +80,10 @@ span {
 
 .super h2, .choix {
     animation: fadeIn 1s ease-in-out;
+    color: rgb(0, 5, 10);
+    font-weight: bold;
+    background: #e7f1ee;
+    border-radius: 20px;
 }
 
 /* Titres h1 */
